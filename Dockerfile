@@ -16,7 +16,7 @@ RUN wget -O - https://www.deepdetect.com/downloads/platform/dd_widgets_latest.ta
 # Jupyter Notebooks examples and DeepDetect python client
 RUN mkdir notebooks
 RUN wget --no-check-certificate https://www.deepdetect.com/downloads/platform/notebooks/dd_examples.ipynb -P notebooks
-RUN wget --no-check-certificate https://raw.githubusercontent.com/jolibrain/deepdetect/master/clients/python/dd_client.py -P notebooks
+RUN wget --no-check-certificate https://raw.githubusercontent.com/jolibrain/deepdetect/master/clients/python/dd_client/__init__.py -O notebooks/dd_client.py
 
 # Examples data
 RUN mkdir examples

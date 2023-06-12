@@ -2,7 +2,7 @@
 
 set -ex
 
-IMAGE_NAME="jolibrain/platform_data"
+IMAGE_NAME="docker.jolibrain.com/platform_data"
 TAG=$(git rev-parse --verify --short HEAD)
 
 docker build -t ${IMAGE_NAME}:${TAG} -t ${IMAGE_NAME}:latest .

@@ -10,14 +10,14 @@ Data fetched:
 To run this docker container:
 
 ```
-docker run -v /opt/platform:/platform/ jolibrain/platform_data
+docker run -v /opt/platform:/platform/ docker.jolibrain.com/platform_data
 ```
 
 Here is an example to add it to your `docker-compose` configuration:
 
 ```
   platform_data:
-    image: 'jolibrain/platform_data'
+    image: 'docker.jolibrain.com/platform_data'
     volumes:
       - /opt/platform:/platform
 ```
